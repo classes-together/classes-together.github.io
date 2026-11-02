@@ -111,6 +111,18 @@ footer .copyright {
 /*
  * HOME PAGE AND FEATURES
  */
+.home h1 {
+  margin-bottom: 1rem;
+}
+
+.home .tagline {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue-medium);
+  margin-bottom: 6rem;
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -125,8 +137,8 @@ footer .copyright {
 
   background-color: var(--blue-dark);
 
-  border: 2px solid var(--blue-medium);
-  box-shadow: 0 8px 20px var(--blue-lighter);
+  border: 2px solid var(--blue-pale);
+  box-shadow: 6px 6px 20px var(--blue-lighter);
 }
 
 .feature:nth-child(2) {
