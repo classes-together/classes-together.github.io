@@ -107,3 +107,32 @@ footer p {
 footer .copyright {
   margin-top: 1.5rem;
 }
+
+/*
+ * HOME PAGE AND FEATURES
+ */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+}
+
+.feature {
+  padding: 40px;
+  border-radius: 10px;
+  text-align: center;
+  color: var(--text-light);
+
+  background-color: var(--blue-dark);
+
+  border: 2px solid var(--blue-medium);
+  box-shadow: 0 8px 20px var(--blue-lighter);
+}
+
+.feature:nth-child(2) {
+  background-color: var(--blue-primary);
+}
+
+.feature:nth-child(3) {
+  background-color: var(--blue-medium-dark);
+}
