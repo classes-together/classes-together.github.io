@@ -1,0 +1,14 @@
+- name: Roman Jay David
+  role: Full-stack Developer
+  image: /assets/team/roman-jay-david.png
+  bio: >-
+    Just a Computer Science Student.
+
+- name: Team Member
+  role: Enter Role Name
+  image: /assets/team/portrait-name.png
+  bio: >-
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse eget augue venenatis nulla
+    vulputate laoreet sit amet ac urna. Nullam euismod felis at ex viverra, ut consequat libero
+    interdum. Vivamus ultrices felis at nisi accumsan bibendum. Donec dictum suscipit ex vel
+    consectetur. Vivamus dignissim sodales odio, eu convallis metus dapibus quis.
