@@ -33,6 +33,7 @@ nav,
 footer {
   background-color: var(--blue-darkest);
   padding: 2rem;
+  color: var(--text-light);
 }
 
 nav div {
@@ -42,7 +43,31 @@ nav div {
   gap: 3rem;
 }
 
+nav a,
+footer a {
+  text-decoration: none;
+}
+
+nav a:hover,
+footer a:hover {
+  color: var(--blue-light);
+}
+
+nav a[aria-current="page"] {
+  color: var(--blue-pale);
+  border-bottom: 1px solid var(--blue-pale);
+  padding-tbottom: 0.25rem;
+}
+
 footer {
   text-align: center;
   color: var(--text-light)
+}
+
+footer p {
+  margin: 0.5rem 0;
+}
+
+footer .copyright {
+  margin-top: 1.5rem;
 }
