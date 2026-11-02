@@ -89,8 +89,12 @@ nav a[aria-current="page"]:hover {
 
 nav a[aria-current="page"] {
   color: var(--blue-pale);
-  border-bottom: 1px solid var(--blue-pale);
+  border-bottom: 2px solid var(--blue-pale);
   padding-bottom: 0.25rem;
+}
+
+nav a[aria-current="page"]:hover {
+  border-bottom: 2px solid var(--blue-light);
 }
 
 footer {
