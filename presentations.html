@@ -6,4 +6,12 @@ title: Presentations
 <section class="page presentations">
   <h1>Presentations</h1>
   <p class="intro">View project presentations and development iterations throughout the semester.</p>
+
+  {% assign presentations = site.data.documents | where: "page", "presentations" %}
+  {% for group in presentations %}
+    {% include document-viewer.html group=group %}
+  {% else %}
+    <p>Presentations will be added here as they are completed</p>
+  {% endfor %}
+
 </section>
