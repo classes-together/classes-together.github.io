@@ -10,6 +10,7 @@
         <button
           type="button"
           class="document-tab"
+          aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
           data-file="{{ document.file | relative_url }}"
         >{{ document.label }}
         </button>
