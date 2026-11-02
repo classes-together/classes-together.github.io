@@ -95,7 +95,7 @@ nav a[aria-current="page"] {
 
 footer {
   text-align: center;
-  color: var(--text-light)
+  color: var(--text-light);
 }
 
 footer a {
@@ -165,7 +165,7 @@ footer .copyright {
 .learn-more {
   display: block;
   width: fit-content;
-  margin: 3rem auto 0;
+  margin: 3rem auto;
   padding: 0.75rem 2rem;
 
   background-color: var(--blue-primary);
@@ -177,13 +177,6 @@ footer .copyright {
 
 .learn-more:hover {
   background-color: var(--blue-medium-dark);
-}
-
-/*
- * PRESENTATIONS
- */
-.presentations .intro {
-  margin-top: 0;
 }
 
 /*
@@ -239,4 +232,74 @@ footer .copyright {
   border: 1px solid var(--blue-light);
   border-radius: 0.75rem;
   background-color: var(--text-light);
+}
+
+/*
+ * RESPONSIVE DESIGN
+ */
+@media (max-width: 1000px) {
+  nav div {
+    gap: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature {
+    padding: 2rem;
+  }
+
+  .document-preview {
+    height: 60vh;
+  }
+}
+
+@media (max-width: 600px) {
+  .page {
+    padding: 2.5rem 1rem;
+  }
+
+  .page > h1 {
+    font-size: 2.25rem;
+  }
+
+  nav,
+  footer {
+    padding: 1.5rem 1rem;
+  }
+
+  nav div {
+    gap: 1rem 1.5rem;
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+
+  .home .tagline,
+  .presentations .description,
+  .deliverables .description {
+    font-size: 1rem;
+    margin-bottom: 3rem;
+  }
+
+  .document-group > h2 {
+    font-size: 1.5rem;
+    margin-top: 3rem;
+  }
+
+  .document-tabs {
+    gap: 0.75rem;
+  }
+
+  .document-tab {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .document-preview {
+    height: 55vh;
+    min-height: 300px;
+  }
 }
