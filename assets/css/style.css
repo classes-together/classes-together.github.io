@@ -19,3 +19,30 @@
   --text-light: #f5f9fc;
   --background: #eeeeee;
 }
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/*
+ * NAVIGATION AND FOOTER
+ */
+nav,
+footer {
+  background-color: var(--blue-darkest);
+  padding: 2rem;
+}
+
+nav div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3rem;
+}
+
+footer {
+  text-align: center;
+  color: var(--text-light)
+}
