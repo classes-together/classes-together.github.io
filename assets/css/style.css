@@ -213,13 +213,24 @@ footer .copyright {
   box-shadow: 6px 6px 20px var(--blue-lighter);
 }
 
-.team-member img {
+.team-member-image {
   width: 100%;
-  height: 250px;
-  object-fit: cover;
+  height: 20rem;
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 
   border: 2px solid var(--blue-medium);
   border-radius: 1rem;
+  overflow: hidden;
+}
+
+.team-member img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .team-member-info {
