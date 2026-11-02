@@ -10,10 +10,12 @@ title: Team
     {% for member in site.data.team %}
       <article class="team-member">
         {% if member.image and member.image != "" %}
-          <img
-            src="{{ member.image | relative_url }}"
-            alt="Portrait of {{ member.name | escape }}"
-          />
+          <div class="team-member-image">
+            <img
+              src="{{ member.image | relative_url }}"
+              alt="Portrait of {{ member.name | escape }}"
+            />
+          </div>
         {% endif %}
 
         <div class="team-member-info">
@@ -22,7 +24,6 @@ title: Team
           <p class="bio">{{ member.bio | escape }}</p>
         </div>
       </article>
-      {% endfor %}
+    {% endfor %}
   </div>
-
 </section>
