@@ -1,0 +1,28 @@
+{% assign group = include.group %}
+{% assign first_document = group.documents | first %}
+
+<section class="document-group">
+  <h2>{{ group.title }}</h2>
+
+  {% if first_document %}
+    <div class="document-tabs">
+      {% for document in group.documents %}
+        <button
+          type="button"
+          class="document-tab"
+          data-file="{{ document.file | relative_url }}"
+        >{{ document.label }}
+        </button>
+      {% endfor %}
+
+    </div>
+
+    <iframe
+      class="document-preview"
+      src="{{ first_document.file | relative_url }}"
+      title="{{ first_document.label}}"
+    ></iframe>
+  {% else %}
+    <p>No documents have been added.</p>
+  {% endif %}
+</section>
