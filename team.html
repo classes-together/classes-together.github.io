@@ -9,14 +9,16 @@ title: Team
   <div class="team-grid">
     {% for member in site.data.team %}
       <article class="team-member">
-        {% if member.image and member.image != "" %}
-          <div class="team-member-image">
+        <div class="team-member-image">
+          {% if member.image and member.image != "" %}
             <img
               src="{{ member.image | relative_url }}"
               alt="Portrait of {{ member.name | escape }}"
             />
-          </div>
-        {% endif %}
+          {% else %}
+            <p>Portrait unavailable</p>
+          {% endif %}
+        </div>
 
         <div class="team-member-info">
           <h2 class="name">{{ member.name | escape }}</h2>
