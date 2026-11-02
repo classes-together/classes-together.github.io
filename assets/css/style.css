@@ -68,10 +68,12 @@ nav div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 3rem;
+  gap: 4rem;
 }
 
 nav a {
+  font-size: 1.3rem;
+  font-weight: 600;
   color: var(--text-light);
 }
 
@@ -81,14 +83,14 @@ footer a {
 }
 
 nav a:hover,
-footer a:hover {
+nav a[aria-current="page"]:hover {
   color: var(--blue-light);
 }
 
 nav a[aria-current="page"] {
   color: var(--blue-pale);
   border-bottom: 1px solid var(--blue-pale);
-  padding-tbottom: 0.25rem;
+  padding-bottom: 0.25rem;
 }
 
 footer {
@@ -98,6 +100,10 @@ footer {
 
 footer a {
   color: var(--blue-light);
+}
+
+footer a:hover {
+  color: var(--blue-pale);
 }
 
 footer p {
@@ -193,6 +199,7 @@ footer .copyright {
   font-weight: 600;
   text-align: left;
 
+  margin-top: 5rem;
   border-bottom: 5px solid var(--blue-medium);
 }
 
