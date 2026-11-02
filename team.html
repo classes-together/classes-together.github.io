@@ -5,4 +5,24 @@ title: Team
 
 <section class="page team">
   <h1>Meet the Team!</h1>
+
+  <div class="team-grid">
+    {% for member in site.data.team %}
+      <article class="team-member">
+        {% if member.image and member.image != "" %}
+          <img
+            src="{{ member.image | relative_url }}"
+            alt="Portrait of {{ member.name | escape }}"
+          />
+        {% endif %}
+
+        <div class="team-member-info">
+          <h2>{{ member.name | escape }}</h2>
+          <p class="role">{{ member.role | escape }}</p>
+          <p class="bio">{{ member.bio | escape }}</p>
+        </div>
+      </article>
+      {% endfor %}
+  </div>
+
 </section>
