@@ -15,3 +15,10 @@
   documents:
     - label: Iteration 1
       file: /assets/presentations/societal-problem.pdf
+
+- id: lab-outline
+  page: deliverables
+  title: Lab Outline
+  documents:
+    - label: Iteration 1
+      file: /assets/deliverables/lab-outline-1.pdf
