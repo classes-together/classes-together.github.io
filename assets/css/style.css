@@ -39,7 +39,7 @@ body {
 }
 
 .page {
-  max-width: 1250px;
+  max-width: 1500px;
   margin: 0 auto;
   padding: 4rem 2rem;
 }
@@ -213,6 +213,7 @@ footer .copyright {
  */
 .team-member {
   width: calc((100% - 4rem) / 3);
+  max-width: 25rem;
   min-height: 35rem;
   padding: 1.5rem;
 
@@ -322,7 +323,7 @@ footer .copyright {
 /*
  * RESPONSIVE DESIGN
  */
-@media (max-width: 1000px) {
+@media (max-width: 1300px) {
   nav div {
     gap: 2rem;
   }
@@ -339,9 +340,13 @@ footer .copyright {
   .document-preview {
     height: 60vh;
   }
+
+  .team-member {
+    width: calc((100% - 2rem) / 2);
+  }
 }
 
-@media (max-width: 600px) {
+@media (max-width: 900px) {
   .page {
     padding: 2.5rem 1rem;
   }
@@ -386,5 +391,13 @@ footer .copyright {
   .document-preview {
     height: 55vh;
     min-height: 300px;
+  }
+
+  .team-member {
+    width: 100%;
+  }
+
+  .team-member-image {
+    height: 16rem;
   }
 }
