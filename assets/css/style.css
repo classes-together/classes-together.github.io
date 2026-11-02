@@ -111,16 +111,20 @@ footer .copyright {
 /*
  * HOME PAGE AND FEATURES
  */
-.home h1 {
+.home h1,
+.presentations h1,
+.deliverables h1 {
   margin-bottom: 1rem;
 }
 
-.home .tagline {
+.home .tagline,
+.presentations .description,
+.deliverables .description {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
   color: var(--blue-medium);
-  margin-bottom: 6rem;
+  margin-bottom: 5rem;
 }
 
 .features-grid {
@@ -181,7 +185,6 @@ footer .copyright {
  */
 .document-group {
   width: 100%;
-  margin-top: 5rem;
 }
 
 .document-group > h2 {
