@@ -194,8 +194,9 @@ footer .copyright {
  * TEAM GRID
  */
 .team-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 2rem;
 }
 
@@ -203,6 +204,7 @@ footer .copyright {
  * TEAM TILE
  */
 .team-member {
+  width: calc((100% - 4rem) / 3);
   min-height: 35rem;
   padding: 1.5rem;
 
