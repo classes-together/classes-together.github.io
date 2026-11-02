@@ -1,0 +1,21 @@
+/*
+ * https://coolors.co/palette/012a4a-013a63-01497c-014f86-2a6f97-2c7da0-468faf-61a5c2-89c2d9-a9d6e5
+ *
+ * Using a blue color palette for Team Blue!
+ */
+:root {
+  --blue-darkest: #012a4a;
+  --blue-dark: #013a63;
+  --blue-deep: #01497c;
+  --blue-primary: #014f86;
+  --blue-medium-dark: #2a6f97;
+  --blue-medium: #2c7da0;
+  --blue-mid-light: #468faf;
+  --blue-light: #61a5c2;
+  --blue-lighter: #89c2d9;
+  --blue-pale: #a9d6e5;
+
+  --text-dark: #1f2937;
+  --text-light: #f5f9fc;
+  --background: #eeeeee;
+}
