@@ -328,15 +328,6 @@ footer .copyright {
     gap: 2rem;
   }
 
-  .features-grid {
-    grid-template-columns: 1fr;
-    gap: 2rem;
-  }
-
-  .feature {
-    padding: 2rem;
-  }
-
   .document-preview {
     height: 60vh;
   }
@@ -373,6 +364,15 @@ footer .copyright {
   .deliverables .description {
     font-size: 1rem;
     margin-bottom: 3rem;
+  }
+
+  .features-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .feature {
+    padding: 2rem;
   }
 
   .document-group > h2 {
