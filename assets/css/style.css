@@ -38,6 +38,19 @@ body {
   background-color: var(--background);
 }
 
+.page {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 4rem 2rem;
+}
+
+.page > h1 {
+  margin-bottom: 2rem;
+  text-align: center;
+  font-size: 3rem;
+  color: var(--blue-dark);
+}
+
 main {
   flex: 1;
 }
