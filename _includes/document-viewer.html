@@ -1,8 +1,8 @@
 {% assign group = include.group %}
 {% assign first_document = group.documents | first %}
 
-<section class="document-group">
-  <h2>{{ group.title }}</h2>
+<section class="document-group" id="{{ group.id }}">
+  <h2>{{ group.title | escape }}</h2>
 
   {% if first_document %}
     <div class="document-tabs">
