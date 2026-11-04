@@ -7,22 +7,17 @@
   {% if first_document %}
     <div class="document-tabs">
       {% for document in group.documents %}
-        <button
-          type="button"
-          class="document-tab"
-          aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
-          data-file="{{ document.file | relative_url }}"
-        >{{ document.label }}
-        </button>
+        <button type="button"
+                class="document-tab"
+                aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}"
+                data-file="{{ document.file | relative_url }}">{{ document.label }}</button>
       {% endfor %}
 
     </div>
 
-    <iframe
-      class="document-preview"
-      src="{{ first_document.file | relative_url }}"
-      title="{{ first_document.label}}"
-    ></iframe>
+    <iframe class="document-preview"
+            src="{{ first_document.file | relative_url }}"
+            title="{{ first_document.label }}"></iframe>
   {% else %}
     <p>No documents have been added.</p>
   {% endif %}
