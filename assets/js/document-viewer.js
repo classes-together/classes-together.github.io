@@ -5,6 +5,7 @@ document.querySelectorAll(".document-group").forEach((group) => {
   tabs.forEach((button) => {
     button.addEventListener("click", () => {
       preview.src = button.dataset.file;
+      preview.title = button.textContent.trim();
 
       tabs.forEach((tab) => {
         tab.setAttribute("aria-pressed", "false");
