@@ -4,7 +4,8 @@ title: References
 ---
 
 <section class="page references">
-  <h1>References</h1>
+
+  {% include page-header.html key="references" %}
 
   {% assign citation_number = 0 %}
   {% assign journals = site.data.references | where: "type", "journal" %}

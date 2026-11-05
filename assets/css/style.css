@@ -336,13 +336,6 @@ footer .copyright {
 }
 
 /*
- * TEAM
- */
-.team > h1 {
-  margin-bottom: 5rem;
-}
-
-/*
  * TEAM GRID
  */
 .team-grid {
@@ -414,13 +407,19 @@ footer .copyright {
 /*
  * SHARED STYLING
  */
+.about h1,
+.team h1,
 .presentations h1,
-.deliverables h1 {
+.deliverables h1,
+.references h1 {
   margin-bottom: 1rem;
 }
 
+.about .description,
+.team .description,
 .presentations .description,
-.deliverables .description {
+.deliverables .description,
+.references .description {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;

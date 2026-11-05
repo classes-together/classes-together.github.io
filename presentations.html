@@ -4,12 +4,11 @@ title: Presentations
 ---
 
 <section class="page presentations">
-  <h1>Presentations</h1>
-  <p class="description">View project presentations and development iterations throughout the semester.</p>
+
+  {% include page-header.html key="presentations" %}
 
   {% assign presentation_groups = site.data.documents | where: "page", "presentations" %}
   {% for group in presentation_groups %}
     {% include document-viewer.html group=group %}
   {% endfor %}
-
 </section>

@@ -4,8 +4,8 @@ title: Deliverables
 ---
 
 <section class="page deliverables">
-  <h1>Deliverables</h1>
-  <p class="description">View project documents, reports, and deliverables throughout the semester.</p>
+
+  {% include page-header.html key="deliverables" %}
 
   {% assign deliverable_groups = site.data.documents | where: "page", "deliverables" %}
   {% for group in deliverable_groups %}

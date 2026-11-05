@@ -1,0 +1,19 @@
+about:
+  title: About
+  description: ""
+
+team:
+  title: Meet the Team!
+  description: ""
+
+presentations:
+  title: Presentations
+  description: View project presentations and development iterations throughout the semester.
+
+deliverables:
+  title: Deliverables
+  description: View project documents, reports, and deliverables throughout the semester.
+
+references:
+  title: References
+  description: ""

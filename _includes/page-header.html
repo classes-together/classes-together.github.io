@@ -1,0 +1,7 @@
+{% assign header = site.data.page-headers[include.key] %}
+
+<h1>{{ header.title | escape }}</h1>
+
+{% if header.description %}
+  <p class="description">{{ header.description | escape }}</p>
+{% endif %}
