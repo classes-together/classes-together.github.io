@@ -261,7 +261,7 @@ footer .copyright {
 
 .feature {
   display: grid;
-  grid-template-rows: 6rem auto auto;
+  grid-template-rows: 5rem auto auto;
   justify-items: center;
   align-content: center;
   gap: 2rem;
@@ -279,11 +279,11 @@ footer .copyright {
   border-left: 2px solid var(--blue-light);
 }
 
-.feature:nth-child(2) {
+.feature:nth-child(3n + 2) {
   background-color: var(--blue-primary);
 }
 
-.feature:nth-child(3) {
+.feature:nth-child(3n) {
   background-color: var(--blue-medium-dark);
 }
 
@@ -291,8 +291,8 @@ footer .copyright {
  * FEATURE ICON
  */
 .feature-icon {
-  width: 5rem;
-  height: 5rem;
+  width: 4.5rem;
+  height: 4.5rem;
   margin: 0;
 
   filter: brightness(0) invert(1);
@@ -305,14 +305,14 @@ footer .copyright {
   margin: 0;
   align-self: center;
 
-  font-size: clamp(1.5rem, 1.7vw, 2rem);
+  font-size: clamp(1.2rem, 1.5vw, 1.7rem);
 }
 
 .feature p {
   max-width: 30rem;
   margin: 0;
 
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   line-height: 1.5;
 }
 
