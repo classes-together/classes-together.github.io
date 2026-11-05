@@ -5,5 +5,22 @@ title: References
 
 <section class="page references">
   <h1>References</h1>
-  <p>References used throughout the project will be added here.</p>
+
+  {% assign journals = site.data.references | where: "type", "journal" %}
+
+  <ul class="reference-list">
+    {% for ref in journals %}
+      <li id="ref- {{ ref.id }}">
+        <span class="reference-number">[{{ ref.id }}]</span>
+        <div class="reference-content">
+          {{ ref.authors | escape }}
+          ({{ ref.year }}).
+          {{ ref.title | escape }}.
+          <em>{{ ref.journal | escape }}, {{ ref.volume }}</em>({{ ref.issue }}),
+          {{ ref.pages | escape }}.
+          <a href=" {{ ref.doi | escape }}">{{ ref.doi | escape }}</a>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
 </section>

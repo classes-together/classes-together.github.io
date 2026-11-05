@@ -1,0 +1,46 @@
+- id: 1
+  type: journal
+  authors: "Lav, N. S., Schiefer, E. J., Das, S., Vancheeswaran, N., Ahmad, S., Nguyen, M., &
+Nicholas, A."
+  year: 2025
+  title: "Undergraduate learning assistants using online messaging improves student educational experiences in large neuroscience lecture courses"
+  journal: "Journal of Undergraduate Neuroscience Education"
+  volume: 23
+  issue: 2
+  pages: "A50-A55"
+  doi: "https://doi.org/10.59390/VWEM4773"
+
+- id: 2
+  type: journal
+  authors: "le Roux, D. B., & Parry, D. A."
+  year: 2022
+  title: "An exploratory investigation of the use and effects of academic instant messaging groups among university students"
+  journal: "Education and Information Technologies"
+  volume: 27
+  issue: 1
+  pages: "1055-1080"
+  doi: "https://doi.org/10.1007/s10639-021-10631-y"
+
+- id: 3
+  type: image
+  title: "Perry Library"
+  source: "Old Dominion University"
+  url: "https://www.odu.edu/article/membership-research-library-association-offers-odu-new-opportunities"
+
+- id: 4
+  type: svg
+  title: "Community Icon"
+  source: "Lucide"
+  url: "https://lucide.dev/icons/user-round-group"
+
+- id: 5
+  type: svg
+  title: "Collaboration Icon"
+  source: "Lucide"
+  url: "https://lucide.dev/icons/messages-circle"
+
+- id: 6
+  type: svg
+  title: "Calendar Icon"
+  source: "Lucide"
+  url: "https://lucide.dev/icons/calendar-range"
