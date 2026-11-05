@@ -4,7 +4,7 @@
     <a href="{{ '/about.html' | relative_url }}" {% if page.url == '/about.html' %} aria-current="page" {% endif %}>About</a>
     <a href="{{ '/team.html' | relative_url }}" {% if page.url == '/team.html' %} aria-current="page" {% endif %}>Team</a>
 
-    {% assign presentation_groups = site.data.documents | where: "page", "presentations" %}
+    {% assign presentation_groups = site.data.documents.presentations %}
       <div class="nav-dropdown">
         <a href="{{ '/presentations.html' | relative_url }}" {% if page.url == '/presentations.html' %} aria-current="page" {% endif %}>Presentations</a>
 
@@ -17,7 +17,7 @@
         </div>
       </div>
 
-    {% assign deliverable_groups = site.data.documents | where: "page", "deliverables" %}
+    {% assign deliverable_groups = site.data.documents.deliverables %}
       <div class="nav-dropdown">
         <a href="{{ '/deliverables.html' | relative_url }}" {% if page.url == '/deliverables.html' %} aria-current="page" {% endif %}>Deliverables</a>
 

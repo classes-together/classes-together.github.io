@@ -7,7 +7,7 @@ title: Presentations
 
   {% include page-header.html key="presentations" %}
 
-  {% assign presentation_groups = site.data.documents | where: "page", "presentations" %}
+  {% assign presentation_groups = site.data.documents.presentations %}
   {% for group in presentation_groups %}
     {% include document-viewer.html group=group %}
   {% endfor %}

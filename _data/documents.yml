@@ -1,20 +1,19 @@
-- id: feasibility
-  page: presentations
-  title: Feasibility Presentations
-  documents:
-    - label: Iteration 1
-      file: /assets/presentations/feasibility-iteration-1.pdf
+presentations:
+  - id: feasibility
+    title: Feasibility Presentations
+    documents:
+      - label: Iteration 1
+        file: /assets/presentations/feasibility-iteration-1.pdf
 
-- id: societal-problem
-  page: presentations
-  title: Societal Problem Presentation
-  documents:
-    - label: Iteration 1
-      file: /assets/presentations/societal-problem.pdf
+  - id: societal-problem
+    title: Societal Problem Presentation
+    documents:
+      - label: Iteration 1
+        file: /assets/presentations/societal-problem.pdf
 
-- id: lab-outline
-  page: deliverables
-  title: Lab Outline
-  documents:
-    - label: Iteration 1
-      file: /assets/deliverables/lab-outline-1.pdf
+deliverables:
+  - id: lab-outline
+    title: Lab Outline
+    documents:
+      - label: Iteration 1
+        file: /assets/deliverables/lab-outline-1.pdf
