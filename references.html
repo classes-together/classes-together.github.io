@@ -17,14 +17,16 @@ title: References
     {% for ref in journals %}
       {% assign citation_number = citation_number | plus: 1 %}
       <li id="ref- {{ ref.id }}">
-          <span class="reference-number">[{{ citation_number }}]</span>
+        <span class="reference-number">[{{ citation_number }}]</span>
         <div class="reference-content">
           {{ ref.authors | escape }}
           ({{ ref.year }}).
           {{ ref.title | escape }}.
           <em>{{ ref.journal | escape }}, {{ ref.volume }}</em>({{ ref.issue }}),
           {{ ref.pages | escape }}.
-          <a href=" {{ ref.doi | escape }}" target="_blank" rel="noopener noreferrer">{{ ref.doi | escape }}</a>
+          <a href=" {{ ref.doi | escape }}"
+             target="_blank"
+             rel="noopener noreferrer">{{ ref.doi | escape }}</a>
         </div>
       </li>
     {% endfor %}
@@ -33,13 +35,15 @@ title: References
   <h2>Images & Media</h2>
   <ul class="reference-list">
     {% for ref in media %}
-    {% assign citation_number = citation_number | plus: 1 %}
-      <li id="ref-{{ ref. id }}">
+      {% assign citation_number = citation_number | plus: 1 %}
+      <li id="ref-{{ ref.id }}">
         <span class="reference-number">[{{ citation_number }}]</span>
 
         <div class="reference-content">
           {{ ref.title | escape }} -
-          <a href="{{ ref.url | escape }}" target="_blank" rel="noopener noreferrer">{{ ref.source | escape }}</a>
+          <a href="{{ ref.url | escape }}"
+             target="_blank"
+             rel="noopener noreferrer">{{ ref.source | escape }}</a>
         </div>
       </li>
     {% endfor %}
