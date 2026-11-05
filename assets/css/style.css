@@ -192,6 +192,7 @@ footer .copyright {
 }
 
 .home-hero {
+  position: relative;
   background-image:
     linear-gradient(
       to bottom,
@@ -230,6 +231,25 @@ footer .copyright {
   color: var(--blue-lighter);
 }
 
+.home-hero .photo-credit {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.25rem;
+
+  background-color: color-mix(in srgb, var(--blue-darkest), transparent 50%);
+  color: var(--text-light);
+
+  font-size: 0.75rem;
+  text-decoration: none;
+}
+
+.home-hero .photo-credit:hover {
+  background-color: color-mix(in srgb, var(--blue-darkest), transparent 0%);
+}
+
 .features-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -241,7 +261,7 @@ footer .copyright {
 
 .feature {
   display: grid;
-  grid-template-rows: 6rem 1rem auto;
+  grid-template-rows: 6rem auto auto;
   justify-items: center;
   align-content: center;
   gap: 2rem;
@@ -416,7 +436,8 @@ footer .copyright {
   scroll-margin-top: 8rem;
 }
 
-.document-group > h2 {
+.references > h2,
+.document-group > h2{
   margin-top: 5rem;
 
   font-size: 2rem;
@@ -509,14 +530,6 @@ nav a:focus-visible,
   overflow-wrap: anywhere;
 }
 
-.reference-list li {
-  padding-left: 0.5in;
-  text-indent: -0.5in;
-  line-height: 2;
-  margin-bottom: 1rem;
-  overflow-wrap: anywhere;
-}
-
 /*
  * RESPONSIVE DESIGN
  */
@@ -603,6 +616,7 @@ nav a:focus-visible,
     font-size: 1.8rem;
   }
 
+  .references > h2,
   .document-group > h2 {
     font-size: 1.5rem;
     margin-top: 3rem;
