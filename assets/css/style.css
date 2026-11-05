@@ -18,6 +18,7 @@
   --text-dark: #1f2937;
   --text-light: #f5f9fc;
   --background: #eeeeee;
+  --perry-library: url("/assets/images/perry-library.jpg")
 }
 
 *,
@@ -53,6 +54,39 @@ main {
   text-align: center;
   font-size: 3rem;
   color: var(--blue-dark);
+}
+
+/*
+ * HOME
+ */
+.home-hero {
+  background-image:
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--blue-darkest), transparent 15%),
+      color-mix(in srgb, var(--blue-darkest), transparent 50%)
+    ),
+    var(--perry-library);
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  min-height: 55vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+  padding: 4rem 2rem;
+}
+
+.page.home {
+  width: 100%;
+  max-width: none;
+  padding: 0;
 }
 
 /*
