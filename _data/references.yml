@@ -1,4 +1,4 @@
-- id: 1
+- id: lav-2025
   type: journal
   authors: "Lav, N. S., Schiefer, E. J., Das, S., Vancheeswaran, N., Ahmad, S., Nguyen, M., &
 Nicholas, A."
@@ -10,7 +10,7 @@ Nicholas, A."
   pages: "A50-A55"
   doi: "https://doi.org/10.59390/VWEM4773"
 
-- id: 2
+- id: leroux-2022
   type: journal
   authors: "le Roux, D. B., & Parry, D. A."
   year: 2022
@@ -21,26 +21,30 @@ Nicholas, A."
   pages: "1055-1080"
   doi: "https://doi.org/10.1007/s10639-021-10631-y"
 
-- id: 3
+- id: perry-library
   type: image
+  category: media
   title: "Perry Library"
   source: "Old Dominion University"
   url: "https://www.odu.edu/article/membership-research-library-association-offers-odu-new-opportunities"
 
-- id: 4
+- id: lucide-community
   type: svg
+  category: media
   title: "Community Icon"
   source: "Lucide"
   url: "https://lucide.dev/icons/user-round-group"
 
-- id: 5
+- id: lucide-collaboration
   type: svg
+  category: media
   title: "Collaboration Icon"
   source: "Lucide"
   url: "https://lucide.dev/icons/messages-circle"
 
-- id: 6
+- id: lucide-calendar
   type: svg
+  category: media
   title: "Calendar Icon"
   source: "Lucide"
   url: "https://lucide.dev/icons/calendar-range"
