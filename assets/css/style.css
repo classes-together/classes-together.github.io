@@ -18,7 +18,7 @@
   --text-dark: #1f2937;
   --text-light: #f5f9fc;
   --background: #eeeeee;
-  --perry-library: url("/assets/images/perry-library.jpg")
+  --perry-library: url("/assets/images/perry-library.jpg");
 }
 
 *,
@@ -54,39 +54,6 @@ main {
   text-align: center;
   font-size: 3rem;
   color: var(--blue-dark);
-}
-
-/*
- * HOME
- */
-.home-hero {
-  background-image:
-    linear-gradient(
-      to bottom,
-      color-mix(in srgb, var(--blue-darkest), transparent 15%),
-      color-mix(in srgb, var(--blue-darkest), transparent 50%)
-    ),
-    var(--perry-library);
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  min-height: 55vh;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
-  text-align: center;
-  padding: 4rem 2rem;
-}
-
-.page.home {
-  width: 100%;
-  max-width: none;
-  padding: 0;
 }
 
 /*
@@ -185,7 +152,7 @@ footer .copyright {
   display: none;
   position: absolute;
 
-  top: calc(100% + 0.50rem);
+  top: calc(100% + 0.5rem);
   left: 50%;
   transform: translateX(-50%);
 
@@ -218,20 +185,49 @@ footer .copyright {
 /*
  * HOME PAGE AND FEATURES
  */
-.home h1,
-.presentations h1,
-.deliverables h1 {
-  margin-bottom: 1rem;
+.page.home {
+  width: 100%;
+  max-width: none;
+  padding: 0;
 }
 
-.home .tagline,
-.presentations .description,
-.deliverables .description {
+.home-hero {
+  background-image:
+    linear-gradient(
+      to bottom,
+      color-mix(in srgb, var(--blue-darkest), transparent 15%),
+      color-mix(in srgb, var(--blue-darkest), transparent 55%)
+    ),
+    var(--perry-library);
+
+  background-size: cover, max(100%, 105rem) auto;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  height: clamp(40rem, 55vh, 45rem);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
   text-align: center;
-  font-size: 1.2rem;
+  padding: 4rem 2rem;
+}
+
+.home-hero h1 {
+  margin: 0 0 1rem;
+  font-size: clamp(3rem, 5vw, 5rem);
+  color: var(--text-light);
+}
+
+.home-hero .tagline {
+  margin: 0;
+  max-width: 55rem;
+
+  font-size: clamp(1.2rem, 2vw, 2rem);
   font-weight: 600;
-  color: var(--blue-medium);
-  margin-bottom: 5rem;
+  color: var(--blue-lighter);
 }
 
 .features-grid {
@@ -352,6 +348,23 @@ footer .copyright {
 
 .team-member-info .bio {
   margin: 0;
+}
+
+/*
+ * SHARED STYLING
+ */
+.presentations h1,
+.deliverables h1 {
+  margin-bottom: 1rem;
+}
+
+.presentations .description,
+.deliverables .description {
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--blue-medium);
+  margin-bottom: 5rem;
 }
 
 /*
