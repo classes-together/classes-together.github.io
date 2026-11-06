@@ -70,6 +70,24 @@ The website uses Jekyll and YAML data files to dynamically populate the pages. I
 5. Include the appropriate citation information such as title, author, publication date, and source URL.
 6. Preview the [References page](references.html) locally to verify that the entry displays correctly.
 
+#### Citing References
+
+Each reference in `_data/references.yml` should be assigned a unique id.
+
+Both methods will generate a numbered citation that links to the corresponding reference.
+
+#### Method 1: Citing in the About Page
+
+The [About page](about.html) current supports citations directly through `_data/about.yml`. Use the optional `text + citation` pair and provide the reference unique ID.
+
+#### Method 2: Citing in Other Pages
+
+For other pages, use the reusable `_includes/cite.html` directly within the page's HTML:
+
+```html
+{% include cite.html id="cite-id" %}
+```
+
 > [!NOTE]
 > Each category may require different metadata. Double check how the Jekyll layout is structured in [References](references.html).
 

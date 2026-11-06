@@ -6,18 +6,27 @@
 # Fields:
 #   title       - Heading displayed for each section.
 #   paragraphs  - List of paragraphs displayed underneath each section.
+#   text        - Paragraph content
+#     citation    - Optional: Reference ID used to generate citation after the paragraph content.
+#
+# Paragraphs can be written as plain text or as structured entries.
+# Use the combination of `text` and `citation` when a text requires a citation.
 #
 # To add a new section, append an entry under `sections`.
 # To add a paragraph under the section, append an entry under the appropriate section's `paragraphs`.
+# To cite a source, use its unique ID from `_data/references.yml`.
 
 sections:
   - title: What Is Classes Together?
     paragraphs:
       - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, turpis sit amet
         porttitor dictum, mauris magna fringilla massa, non aliquam erat elit vitae metus.
+
       - Nullam quam erat, pellentesque ac mauris non, vehicula ultrices metus. Donec diam magna,
         facilisis ac augue non, molestie porta ante.
-      - Suspendisse laoreet non orci quis blandit. Cras ac purus a leo maximus consectetur.
+
+      - text: Using a solid communication platform can make it easier for students to interact with and ask for help from one another.
+        citation: pronto-2021
 
   - title: Problem Statement
     paragraphs:
@@ -29,6 +38,9 @@ sections:
         tellus vitae ante. Quisque dui purus, commodo at feugiat a, laoreet ac felis.
       - Maecenas vestibulum leo nibh, quis pellentesque massa pulvinar sit amet. Nam tincidunt
         rutrum imperdiet. Donec non luctus urna.
+
+      - text: Student-to-student communication can help with the vital sense of student belonging.
+        citation: pronto-2021
 
   - title: Problem Solution
     paragraphs:

@@ -13,7 +13,16 @@ header_key: about
     <h2>{{ section.title | escape }}</h2>
 
     {% for paragraph in section.paragraphs %}
-      <p>{{ paragraph | escape }}</p>
+      <p>
+        {% if paragraph.text %}
+          {{ paragraph.text | escape }}
+          {% if paragraph.citation %}
+            {% include cite.html id=paragraph.citation %}
+          {% endif %}
+        {% else %}
+          {{ paragraph | escape }}
+        {% endif %}
+      </p>
     {% endfor %}
   {% endfor %}
 

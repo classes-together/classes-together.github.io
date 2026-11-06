@@ -1,0 +1,9 @@
+{% assign refs = site.data.references.academic | concat: site.data.references.web | concat: site.data.references.media %}
+
+{% for ref in refs %} 
+  {% if ref.id == include.id %}
+    <a class="citation" href="{{ '/references/' | relative_url }}#ref-{{ ref.id | escape }}">
+      [{{ forloop.index }}]</a>
+    {% break %}
+  {% endif %}
+{% endfor %}
