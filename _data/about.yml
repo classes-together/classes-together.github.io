@@ -1,0 +1,29 @@
+sections:
+  - title: What Is Classes Together?
+    paragraphs:
+      - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus tincidunt, turpis sit amet
+        porttitor dictum, mauris magna fringilla massa, non aliquam erat elit vitae metus.
+      - Nullam quam erat, pellentesque ac mauris non, vehicula ultrices metus. Donec diam magna,
+        facilisis ac augue non, molestie porta ante.
+      - Suspendisse laoreet non orci quis blandit. Cras ac purus a leo maximus consectetur.
+
+  - title: Problem Statement
+    paragraphs:
+      - Duis et pretium purus, et efficitur dui. Morbi sagittis ex dolor, at venenatis risus
+        ultrices quis. Mauris gravida justo sit amet ipsum ullamcorper bibendum. Quisque in est
+        vulputate, pretium lectus at, sagittis nisi. Suspendisse imperdiet ipsum eu laoreet
+        fringilla.
+      - Vestibulum gravida, purus at tempor viverra, ligula metus accumsan arcu, vel venenatis enim
+        tellus vitae ante. Quisque dui purus, commodo at feugiat a, laoreet ac felis.
+      - Maecenas vestibulum leo nibh, quis pellentesque massa pulvinar sit amet. Nam tincidunt
+        rutrum imperdiet. Donec non luctus urna.
+
+  - title: Problem Solution
+    paragraphs:
+      - Sed condimentum mauris dolor, nec ornare urna lacinia nec. Pellentesque commodo vestibulum
+        lobortis. Morbi faucibus dignissim vestibulum. Ut tristique dignissim sem, sit amet dictum
+        tortor. Cras id maximus elit. Quisque sed pretium eros, at sollicitudin tortor. Integer
+        tempor nulla at sem commodo ullamcorper quis vel lectus. Sed porta sit amet justo nec
+        fringilla.
+      - Donec mollis mollis metus, et viverra dui tincidunt non. Mauris rhoncus lacus tempor luctus
+        viverra. In vehicula ex felis, eget pulvinar elit congue nec.

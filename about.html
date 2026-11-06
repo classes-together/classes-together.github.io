@@ -3,6 +3,17 @@ layout: default
 title: About
 ---
 
+{% assign sections = site.data.about.sections %}
+
 <section class="page about">
   {% include page-header.html key="about" %}
+
+  {% for section in sections %}
+    <h2>{{ section.title | escape }}</h2>
+
+    {% for paragraph in section.paragraphs %}
+      <p>{{ paragraph | escape }}</p>
+    {% endfor %}
+  {% endfor %}
+
 </section>
