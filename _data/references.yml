@@ -1,50 +1,100 @@
-- id: lav-2025
-  type: journal
-  authors: "Lav, N. S., Schiefer, E. J., Das, S., Vancheeswaran, N., Ahmad, S., Nguyen, M., &
-Nicholas, A."
-  year: 2025
-  title: "Undergraduate learning assistants using online messaging improves student educational experiences in large neuroscience lecture courses"
-  journal: "Journal of Undergraduate Neuroscience Education"
-  volume: 23
-  issue: 2
-  pages: "A50-A55"
-  doi: "https://doi.org/10.59390/VWEM4773"
+# Reference Page
+#
+# Top-level keys:
+#   academic    - Academic papers and journal articles.
+#   web         - Websites and online articles.
+#   media       - Images, icons, and other visual assets.
 
-- id: leroux-2022
-  type: journal
-  authors: "le Roux, D. B., & Parry, D. A."
-  year: 2022
-  title: "An exploratory investigation of the use and effects of academic instant messaging groups among university students"
-  journal: "Education and Information Technologies"
-  volume: 27
-  issue: 1
-  pages: "1055-1080"
-  doi: "https://doi.org/10.1007/s10639-021-10631-y"
 
-- id: perry-library
-  type: image
-  category: media
-  title: "Perry Library"
-  source: "Old Dominion University"
-  url: "https://www.odu.edu/article/membership-research-library-association-offers-odu-new-opportunities"
+# Academic Research References
+#
+# Fields:
+#   id        - Unique identifier.
+#   type      - Reference type (journal-article).
+#   authors   - Author(s) of the publication.
+#   year      - Publication year.
+#   title     - Title of the publication.
+#   journal   - Journal name.
+#   volume    - Journal volume.
+#   issue     - Journal issue.
+#   pages     - Page range.
+#   doi       - DOI link.
+academic:
+  - id: lav-2025
+    type: journal-article
+    authors: "Lav, N. S., Schiefer, E. J., Das, S., Vancheeswaran, N., Ahmad, S., Nguyen, M., & Nicholas, A."
+    year: 2025
+    title: "Undergraduate learning assistants using online messaging improves student educational experiences in large neuroscience lecture course"
+    journal: "Journal of Undergraduate Neuroscience Education"
+    volume: 23
+    issue: 2
+    pages: "A50-A55"
+    doi: "https://doi.org/10.59390/VWEM4773"
 
-- id: lucide-community
-  type: svg
-  category: media
-  title: "Community Icon"
-  source: "Lucide"
-  url: "https://lucide.dev/icons/user-round-group"
+  - id: leroux-2022
+    type: journal-article
+    authors: "le Roux, D. B., & Parry, D. A."
+    year: 2022
+    title: "An exploratory investigation of the use and effects of academic instant messaging groups among university students"
+    journal: "Education and Information Technologies"
+    volume: 27
+    issue: 1
+    pages: "1055-1080"
+    doi: "https://doi.org/10.1007/s10639-021-10631-y"
 
-- id: lucide-collaboration
-  type: svg
-  category: media
-  title: "Collaboration Icon"
-  source: "Lucide"
-  url: "https://lucide.dev/icons/messages-circle"
+# Web Source References
+#
+# Fields:
+#   id        - Unique identifier.
+#   type      - Reference type (web-article)
+#   authors   - Author(s) or organization.
+#   year      - Publication year.
+#   month     - Publication month.
+#   day       - Publication day.
+#   title     - Title of article.
+#   source    - Website or publisher.
+#   url       - Original source URL.
+web:
+  - id: pronto-2021
+    type: web-article
+    authors: "Pronto"
+    year: 2021
+    month: "May"
+    day: 17
+    title: "Communication: A key element of student success in higher education"
+    source: Pronto
+    url: "https://pronto.io/communication-key-element-student-success/"
 
-- id: lucide-calendar
-  type: svg
-  category: media
-  title: "Calendar Icon"
-  source: "Lucide"
-  url: "https://lucide.dev/icons/calendar-range"
+
+# Media & Images References
+#
+# Fields:
+#   id        - Unique identifier.
+#   type      - Asset type (photograph, icon).
+#   title     - Name of the asset.
+#   source    - Creator or provider.
+#   url       - Original asset URL.
+media:
+  - id: perry-library
+    type: photograph
+    title: "Perry Library"
+    source: "Old Dominion University"
+    url: "https://www.odu.edu/article/membership-research-library-association-offers-odu-new-opportunities"
+
+  - id: lucide-community
+    type: icon
+    title: "Community Icon"
+    source: "Lucide"
+    url: "https://lucide.dev/icons/user-round-group"
+
+  - id: lucide-collaboration
+    type: icon
+    title: "Collaboration Icon"
+    source: "Lucide"
+    url: "https://lucide.dev/icons/messages-circle"
+
+  - id: lucide-calendar
+    type: icon
+    title: "Calendar Icon"
+    source: "Lucide"
+    url: "https://lucide.dev/icons/calendar-range"

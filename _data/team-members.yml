@@ -1,3 +1,17 @@
+# Team Members
+#
+# To add a team member:
+#   1. Add a new entry beginning with `- name:`.
+#   2. Fill in the fields listed below.
+#
+# Fields:
+#   name    - Team member's name (First/Last)
+#   role    - Role within the project.
+#   image   - Relative path of team member's photo (try to keep in /assets/team/...)
+#   bio     - Short biography or introduction. 
+#
+# `>-` allows for multiline text to be treated as a single line.
+
 - name: Roman Jay David
   role: Full-stack Developer
   image: /assets/team/roman-jay-david.png

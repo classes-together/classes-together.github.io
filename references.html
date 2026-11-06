@@ -8,15 +8,15 @@ title: References
   {% include page-header.html key="references" %}
 
   {% assign citation_number = 0 %}
-  {% assign journals = site.data.references | where: "type", "journal" %}
-  {% assign media = site.data.references | where: "category", "media" %}
+  {% assign academic = site.data.references.academic %}
+  {% assign web = site.data.references.web %}
+  {% assign media = site.data.references.media %}
 
-  <h2>Journal</h2>
-
+  <h2>Academic Research</h2>
   <ul class="reference-list">
-    {% for ref in journals %}
+    {% for ref in academic %}
       {% assign citation_number = citation_number | plus: 1 %}
-      <li id="ref- {{ ref.id }}">
+      <li id="ref-{{ ref.id }}">
         <span class="reference-number">[{{ citation_number }}]</span>
         <div class="reference-content">
           {{ ref.authors | escape }}
@@ -29,6 +29,25 @@ title: References
              rel="noopener noreferrer">{{ ref.doi | escape }}</a>
         </div>
       </li>
+    {% endfor %}
+  </ul>
+
+  <h2>Web Sources</h2>
+  <ul class="reference-list">
+    {% for ref in web %}
+      {% assign citation_number = citation_number | plus: 1 %}
+      <li id="ref-{{ ref.id }}">
+        <span class="reference-number">[{{ citation_number }}]</span>
+        <div class="reference-content">
+          {{ ref.authors | escape }}
+          ({{ ref.year }}, {{ ref.month }} {{ ref.day }}).
+          <em>{{ ref.title | escape }}.</em>
+          {{ ref.source | escape }}.
+          <a href="{{ ref.url | escape }}"
+             target="_blank"
+             rel="noopener noreferrer">{{ ref.url | escape }}</a>
+        </div>
+      <li>
     {% endfor %}
   </ul>
 

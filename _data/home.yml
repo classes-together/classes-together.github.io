@@ -1,3 +1,22 @@
+# Home Page
+#
+# Top-level keys:
+#   hero      - The top section of the home page.
+#   features  - Features underneath the hero.
+#
+
+# Hero
+#
+# Fields:
+#   title         - Main heading displayed in the hero section.
+#   tagline       - Subtitle displayed underneath the title.
+#   photo_credit  - Providing credit for the background image used.
+#     text        - The displayed text for the credit.
+#     url         - Link to the image source.
+#   button        - The button underneath the hero heading and tagline.
+#     text        - Label for the button.
+#     url         - Button destination when clicked.
+#
 hero:
   title: Classes Together
   tagline: Conveniently Collaborate with Your Classmates
@@ -10,6 +29,12 @@ hero:
     text: Learn More &rarr;
     url: /about.html
 
+# Features
+#
+#   title         - Feature heading
+#   description   - Short description of the feature
+#   alt           - Alternative text for the feature icon.
+#   icon          - Path to the feature's icon, relative to the website root.
 features:
   - title: Course Communities
     description: Automatically access communities for all courses you're currently enrolled in.

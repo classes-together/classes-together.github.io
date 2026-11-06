@@ -1,3 +1,15 @@
+# About Page
+#
+# Top-level keys:
+#   sections    - List of sections displayed on the About page.
+#
+# Fields:
+#   title       - Heading displayed for each section.
+#   paragraphs  - List of paragraphs displayed underneath each section.
+#
+# To add a new section, append an entry under `sections`.
+# To add a paragraph under the section, append an entry under the appropriate section's `paragraphs`.
+
 sections:
   - title: What Is Classes Together?
     paragraphs:

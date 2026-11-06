@@ -1,3 +1,21 @@
+# Presentation and Deliverable Documents.
+#
+# Top-level keys:
+#   presentations   - Documents displayed on the Presentations page.
+#   deliverables    - Documents displayed on the Deliverables page.
+#
+# Fields:
+#   id          - Unique identifier used for navigation anchors.
+#   title       - Display name of the document group (section in the appropriate page).
+#   documents   - List of documents belonging to the group. 
+#
+# Each document contains:
+#   label       - Display name used in the documente viewer tabs.
+#   file        - Path to the PDF, relative to the website root.
+#
+# To add a new group, append a section under the appropriate page.
+# To add another iteration, append a document under the existing group.
+
 presentations:
   - id: feasibility
     title: Feasibility Presentations

@@ -1,3 +1,15 @@
+# Page Header for each page
+#
+# Top-level keys:
+#   about, team presentations, deliverables, references
+#     - Correspond to the pages using the shared page-header include.
+#
+# Fields:
+#   title       - Main heading displayed at the top of the page.
+#   description - Optional description displayed underneath the heading.
+#
+# To update a page header, modify the appropriate entry.
+
 about:
   title: About
   description: ""
