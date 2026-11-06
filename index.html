@@ -7,44 +7,22 @@ title: Home
   <div class="home-hero">
     <h1>Classes Together</h1>
     <p class="tagline">Conveniently Collaborate with Your Classmates</p>
-    <a class="photo-credit" href="{{ '/references.html' | relative_url }}#perry-library">
-      Photo: Old Dominion University
-    </a>
+    <a class="photo-credit"
+       href="{{ '/references.html' | relative_url }}#perry-library">Photo: Old Dominion University</a>
+    <a class="learn-more" href="{{ '/about.html' | relative_url }}">Learn More →</a>
   </div>
 
   <div class="features-grid">
-    <div class="feature">
-      <img
-        src="{{ '/assets/icons/user-round-group.svg' | relative_url }}"
-        alt=""
-        class="feature-icon"
-      />
-      <h2>Course Communities</h2>
-      <p>Automatically access communities for all courses you're currently enrolled in.</p>
-    </div>
+    {% for feature in site.data.features %}
+      <div class="feature">
+        <img src="{{ feature.icon | relative_url }}"
+             alt="{{ feature.alt | escape }}"
+             class="feature-icon" />
 
-    <div class="feature">
-      <img
-        src="{{ '/assets/icons/messages-circle.svg' | relative_url }}"
-        alt=""
-        class="feature-icon"
-      />
-      <h2>Connect & Collaborate</h2>
-      <p>Ask questions, share resources, and organize study sessions.</p>
-    </div>
-
-    <div class="feature">
-      <img
-        src="{{ '/assets/icons/calendar-range.svg' | relative_url }}"
-        alt=""
-        class="feature-icon"
-      />
-      <h2>Semester Based</h2>
-      <p>
-        Communities are created for a specific course and semester, keeping discussions relevant.
-      </p>
-    </div>
+        <h2>{{ feature.title | escape }}</h2>
+        <p>{{ feature.description | escape }}</p>
+      </div>
+    {% endfor %}
   </div>
-</section>
 
-<a class="learn-more" href="{{ '/about.html' | relative_url }}">Learn More</a>
+</section>
