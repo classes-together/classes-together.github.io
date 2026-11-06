@@ -1,11 +1,12 @@
 ---
-layout: default
 title: Presentations
+permalink: /presentations/
+header_key: presentations
 ---
 
 <section class="page presentations">
 
-  {% include page-header.html key="presentations" %}
+  {% include page-header.html key=page.header_key %}
 
   {% assign presentation_groups = site.data.documents.presentations %}
   {% for group in presentation_groups %}

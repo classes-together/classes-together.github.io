@@ -1,12 +1,13 @@
 ---
-layout: default
 title: About
+permalink: /about/
+header_key: about
 ---
 
 {% assign sections = site.data.about.sections %}
 
 <section class="page about">
-  {% include page-header.html key="about" %}
+  {% include page-header.html key=page.header_key %}
 
   {% for section in sections %}
     <h2>{{ section.title | escape }}</h2>

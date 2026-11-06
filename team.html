@@ -1,11 +1,12 @@
 ---
-layout: default
 title: Team
+permalink: /team/
+header_key: team
 ---
 
 <section class="page team">
 
-  {% include page-header.html key="team" %}
+  {% include page-header.html key=page.header_key %}
 
   <div class="team-grid">
     {% for member in site.data.team-members %}

@@ -1,11 +1,12 @@
 ---
-layout: default
 title: Deliverables
+permalink: /deliverables/
+header_key: deliverables
 ---
 
 <section class="page deliverables">
 
-  {% include page-header.html key="deliverables" %}
+  {% include page-header.html key=page.header_key %}
 
   {% assign deliverable_groups = site.data.documents.deliverables %}
   {% for group in deliverable_groups %}
