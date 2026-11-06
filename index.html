@@ -3,17 +3,21 @@ layout: default
 title: Home
 ---
 
+{% assign hero = site.data.home.hero %}
+{% assign features = site.data.home.features %}
+
 <section class="page home">
   <div class="home-hero">
-    <h1>Classes Together</h1>
-    <p class="tagline">Conveniently Collaborate with Your Classmates</p>
+    <h1>{{ hero.title | escape }}</h1>
+    <p class="tagline">{{ hero.tagline | escape }}</p>
     <a class="photo-credit"
-       href="{{ '/references.html' | relative_url }}#perry-library">Photo: Old Dominion University</a>
-    <a class="learn-more" href="{{ '/about.html' | relative_url }}">Learn More →</a>
+       href="{{ hero.photo_credit.url | relative_url | escape }}">{{ hero.photo_credit.text | escape }}</a>
+    <a class="learn-more"
+       href="{{ hero.button.url | relative_url | escape }}">{{ hero.button.text | escape }}</a>
   </div>
 
   <div class="features-grid">
-    {% for feature in site.data.features %}
+    {% for feature in features %}
       <div class="feature">
         <img src="{{ feature.icon | relative_url }}"
              alt="{{ feature.alt | escape }}"

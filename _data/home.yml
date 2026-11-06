@@ -1,0 +1,27 @@
+hero:
+  title: Classes Together
+  tagline: Conveniently Collaborate with Your Classmates
+
+  photo_credit:
+    text: "Photo: Old Dominion University"
+    url: "/references.html#perry-library"
+
+  button:
+    text: Learn More &rarr;
+    url: /about.html
+
+features:
+  - title: Course Communities
+    description: Automatically access communities for all courses you're currently enrolled in.
+    alt: ""
+    icon: /assets/icons/user-round-group.svg
+
+  - title: Connect & Collaborate
+    description: Ask questions, share resources, and organize study sessions.
+    alt: ""
+    icon: /assets/icons/messages-circle.svg
+
+  - title: Semester Based
+    description: Communities are created for a specific course and semester, keeping discussions relevant.
+    alt: ""
+    icon: /assets/icons/calendar-range.svg
