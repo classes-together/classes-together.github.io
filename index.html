@@ -9,11 +9,11 @@ title: Home
 <section class="page home">
   <div class="home-hero">
     <h1>{{ hero.title | escape }}</h1>
-    <p class="tagline">{{ hero.tagline | escape }}</p>
+    <p class="tagline">{{ hero.tagline }}</p>
     <a class="photo-credit"
        href="{{ hero.photo_credit.url | relative_url | escape }}">{{ hero.photo_credit.text | escape }}</a>
     <a class="learn-more"
-       href="{{ hero.button.url | relative_url | escape }}">{{ hero.button.text | escape }}</a>
+       href="{{ hero.button.url | relative_url | escape }}">{{ hero.button.text }}</a>
   </div>
 
   <div class="features-grid">
