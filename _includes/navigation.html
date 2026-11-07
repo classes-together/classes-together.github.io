@@ -1,12 +1,12 @@
 <nav>
   <div>
     <a href="{{ '/' | relative_url }}" {% if page.url == '/' %} aria-current="page" {% endif %}>Home</a>
-    <a href="{{ '/about' | relative_url }}" {% if page.url == '/about' %} aria-current="page" {% endif %}>About</a>
-    <a href="{{ '/team' | relative_url }}" {% if page.url == '/team' %} aria-current="page" {% endif %}>Team</a>
+    <a href="{{ '/about' | relative_url }}" {% if page.url == '/about/' %} aria-current="page" {% endif %}>About</a>
+    <a href="{{ '/team' | relative_url }}" {% if page.url == '/team/' %} aria-current="page" {% endif %}>Team</a>
 
     {% assign presentation_groups = site.data.documents.presentations %}
       <div class="nav-dropdown">
-        <a href="{{ '/presentations' | relative_url }}" {% if page.url == '/presentations' %} aria-current="page" {% endif %}>Presentations</a>
+        <a href="{{ '/presentations' | relative_url }}" {% if page.url == '/presentations/' %} aria-current="page" {% endif %}>Presentations</a>
 
         <div class ="nav-dropdown-menu">
           {% for group in presentation_groups %}
@@ -19,7 +19,7 @@
 
     {% assign deliverable_groups = site.data.documents.deliverables %}
       <div class="nav-dropdown">
-        <a href="{{ '/deliverables' | relative_url }}" {% if page.url == '/deliverables' %} aria-current="page" {% endif %}>Deliverables</a>
+        <a href="{{ '/deliverables' | relative_url }}" {% if page.url == '/deliverables/' %} aria-current="page" {% endif %}>Deliverables</a>
 
         <div class="nav-dropdown-menu">
           {% for group in deliverable_groups %}
@@ -30,6 +30,6 @@
         </div>
       </div>
 
-    <a href="{{ '/references' | relative_url }}" {% if page.url == '/references' %} aria-current="page" {% endif %}>References</a>
+    <a href="{{ '/references' | relative_url }}" {% if page.url == '/references/' %} aria-current="page" {% endif %}>References</a>
   </div>
 </nav>
