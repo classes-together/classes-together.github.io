@@ -1,7 +1,8 @@
-# classes-together.github.io
-<h2><a href="https://docs.google.com/document/d/1b1uGfrtwUT9Sd3vDsNSTGJgsmWPGEfQ2u8JJY-z7OmE/edit?usp=sharing">Lab 1 Outline - Foundation</a></h2>
+# Classes Together Portfolio Website
 
-**Website:** [Classes Together](https://classes-together.github.io/)
+## Project Website
+
+View the website: [Classes Together](https://classes-together.github.io/)
 
 ## Team Members
 
@@ -17,6 +18,14 @@
 | Zachary Perkins | | |
 | Pratham Talati | | |
 | Ali Al Tekreeti | | |
+
+
+## Collaborative Documents
+
+
+| Document | Link |
+|----------|------|
+| Lab 1 Outline - Foundation | [Google Docs](https://docs.google.com/document/d/1b1uGfrtwUT9Sd3vDsNSTGJgsmWPGEfQ2u8JJY-z7OmE/edit?usp=sharing) |
 
 
 ## Website Structure
