@@ -17,7 +17,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | Aaron Moeller | | |
 | Zachary Perkins | | |
 | Pratham Talati | | |
-| Ali Al Tekreeti | | |
+| Ali Al Tekreeti | [Email](mailto:aalte002@odu.edu) | [@aalte002](https://github.com/aalte002)|
 
 
 ## Collaborative Documents
