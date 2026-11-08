@@ -5,15 +5,31 @@
 #   2. Fill in the fields listed below.
 #
 # Fields:
-#   name    - Team member's name (First/Last)
-#   role    - Role within the project.
-#   image   - Relative path of team member's photo (try to keep in /assets/team/...)
-#   bio     - Short biography or introduction. 
+#   name              - Team member's name (First/Last)
+#   role              - Role within the project.
+#   image             - Team member's photo and optional adjustments.
+#     path            - Required relative path of team member's photo (try to keep in /assets/team/...)
+#     image_position  - Optional CSS object-position property (default: center).
+#     image_zoom      - Optional image scale factor (default: 1).
+#     image_x         - Optional horizontal image offset (default: 0%).
+#     image_y         - Optional vertical image offset (default: 0%).
+#   bio               - Short biography or introduction.
+#
+# Image adjustments (examples):
+#   zoom: 1.5     # Zoom in by 50%
+#   x: 40%        # Shift image right
+#   x: -40%       # Shift image left
+#   y: 20%        # Shift image down
+#   y: -20%       # Shift image up
 #
 # `>-` allows for multiline text to be treated as a single line.
 
 - name: Roman Jay David
-  role: Full-stack Developer
-  image: /assets/team/roman-jay-david.png
+  role:
+  image: 
+    path: /assets/team/roman-jay-david.jpg
   bio: >-
-    Just a Computer Science Student.
+    Roman is a senior Computer Science student at Old Dominion University. He has a strong interest
+    in Linux and computer networks. He enjoys tinkering with computers and experimenting with lab
+    environments to develop his troubleshooting skills. Outside of school, he enjoys playing video
+    games, watching movies, working out, and spending time with his 9-year old cat Peaches.

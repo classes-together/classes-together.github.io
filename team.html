@@ -12,9 +12,15 @@ header_key: team
     {% for member in site.data.team-members %}
       <article class="team-member">
         <div class="team-member-image">
-          {% if member.image and member.image != "" %}
-            <img src="{{ member.image | relative_url }}"
-                 alt="Portrait of {{ member.name | escape }}" />
+          {% if member.image.path and member.image.path != "" %}
+            <img src="{{ member.image.path | relative_url }}"
+                 alt="Portrait of {{ member.name | escape }}"
+                 style="
+                  --image-position: {{ member.image.position | default: 'center' | escape }};
+                  --image-zoom: {{ member.image.zoom | default: 1 | escape }};
+                  --image-x: {{ member.image.x | default: '0%' | escape }};
+                  --image-y: {{ member.image.y | default: '0%' | escape }};
+                  " />
           {% else %}
             <p>Portrait unavailable</p>
           {% endif %}
