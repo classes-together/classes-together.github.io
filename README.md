@@ -228,15 +228,12 @@ To stop the development server, press `Ctrl + C` in the terminal.
 
 ## Contributing
 
-To maintain a clean and organized repository, use the follow workflow when making changes:
+To maintain a clean and organized repository, use the following workflow when making changes:
 
-1. Create a new branch from `main`.
-2. Make your changes on the new branch.
-3. Test the website locally.
-4. Commit your changes with descriptive commit messages.
-5. Push the branch to GitHub.
-6. Open a pull request.
-7. Review and merge the changes once approved.
+1. Pull the latest changes from `main`.
+2. Make your changes and test locally.
+3. Commit your changes with a message.
+4. Push your changes to GitHub.
 
-> [!WARNING]
-> Avoid making changes directly to `main`.
+> [!NOTE]
+> For any larger changes, we can use feature branches and opening a pull request before merging.
