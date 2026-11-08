@@ -33,3 +33,18 @@
     in Linux and computer networks. He enjoys tinkering with computers and experimenting with lab
     environments to develop his troubleshooting skills. Outside of school, he enjoys playing video
     games, watching movies, working out, and spending time with his 9-year old cat Peaches.
+
+# Team-Bio reference based upon code by Roman David at
+# team-members.yml
+# Begin quoted code by Roman David at
+# team-members.yml
+- name: Zachary Perkins
+  role:
+  image:
+    path: /assets/team/Zachary_Perkins.jpeg
+  bio: >-
+    Zachary is a senior and an online student at Old Dominion University. He is currently majoring in Computer Science with a 
+    minor in Cybersecurity. He is a team member for the CS 410 Team Blue. He loves and enjoys playing video games and golf, 
+    watching TV, spending time with family and friends, listening to music, playing the piano at church, and swimming for 
+    Special Olympics Virginia.
+# End quoted code
