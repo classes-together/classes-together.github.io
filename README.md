@@ -121,6 +121,7 @@ On top of the created `.html`, add the following:
 ```html
 ---
 title: FAQ
+permalink: /faq/
 header_key: faq
 ---
 
@@ -130,6 +131,7 @@ header_key: faq
 ```
 
 - `title`: FAQ defines the page title for use by the Jekyll layout.
+- `permalink`: defines the URL path used to access the page (e.g., `https://classes-together.github.io/faq/` instead of `https://classes-together.github.io/faq.html`)
 - `header_key`: Identifies the corresponding entry in `_data/page-headers.yml` used by the shared page header.
   - Ensure you create an entry if used.
 - `<section class="page faq">`: identifies the page and allows for page-specific styling.
