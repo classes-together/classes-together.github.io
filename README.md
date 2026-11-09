@@ -14,7 +14,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida)|
 | Char Davis | | |
 | MayLing Gordon |[Email](mailto:mgord019@odu.edu) | [@mgord019](https://github.com/mgord019)|
-| Aaron Moeller | | |
+| Aaron Moeller | [Email](mailto:amoel001@odu.edu) | [@csamoeller](https://github.com/csamoeller) |
 | Zachary Perkins |[Email](zperk002@odu.edu) |[@zperk002](https://github.com/zperk002) |
 | Pratham Talati | | |
 | Ali Al Tekreeti | [Email](mailto:aalte002@odu.edu) | [@aalte002](https://github.com/aalte002)|
