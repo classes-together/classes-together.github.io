@@ -9,7 +9,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 
 | Name | Email | GitHub |
 |------|-------|--------|
-| Ty Brickers | | |
+| Ty Brickers | [Email](mailto:tbric005@odu.edu) | [@tybrick47](https://github.com/tybrick47)|
 | Brycen Cuffee | | |
 | Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida)|
 | Char Davis | | |
