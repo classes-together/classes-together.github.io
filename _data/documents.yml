@@ -22,6 +22,8 @@ presentations:
     documents:
       - label: Iteration 1
         file: /assets/presentations/feasibility-iteration-1.pdf
+      - label: Iteration 2
+        file: /assets/presentations/feasibility-iteration-2.pdf
 
   - id: societal-problem
     title: Societal Problem Presentation

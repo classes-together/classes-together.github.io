@@ -486,21 +486,26 @@ footer .copyright {
 
   border: 1px solid var(--blue-light);
   border-radius: 0.5rem;
-  background-color: var(--blue-primary);
+  background-color: var(--blue-dark);
 
   color: var(--text-light);
   font: inherit;
+  font-weight: 600;
   cursor: pointer;
 }
 
 .document-tab:hover {
-  background-color: var(--blue-medium-dark);
+  background-color: var(--blue-primary);
 }
 
 .document-tab[aria-pressed="true"] {
-  background-color: var(--blue-dark);
-  border-color: var(--blue-pale);
+  background-color: var(--blue-medium-dark);
+  box-shadow: inset 0 0 0 2px var(--blue-light);
   font-weight: 600;
+}
+
+.document-tab[aria-pressed="true"]:hover {
+  background-color: var(--blue-medium);
 }
 
 .document-preview {
