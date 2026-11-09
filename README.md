@@ -13,7 +13,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | Brycen Cuffee | | |
 | Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida)|
 | Char Davis | | |
-| MayLing Gordon | | |
+| MayLing Gordon |[Email](mailto:mgord019@odu.edu) | [@rojarida](https://github.com/mgord019)|
 | Aaron Moeller | | |
 | Zachary Perkins | | |
 | Pratham Talati | | |
