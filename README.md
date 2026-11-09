@@ -15,7 +15,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | Char Davis | | |
 | MayLing Gordon |[Email](mailto:mgord019@odu.edu) | [@rojarida](https://github.com/mgord019)|
 | Aaron Moeller | | |
-| Zachary Perkins | | |
+| Zachary Perkins |[Email](zperk002@odu.edu) |[@zperk002](https://github.com/zperk002) |
 | Pratham Talati | | |
 | Ali Al Tekreeti | [Email](mailto:aalte002@odu.edu) | [@aalte002](https://github.com/aalte002)|
 
