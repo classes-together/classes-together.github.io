@@ -57,3 +57,23 @@
     Ali is a senior Computer Science student at Old Dominion University. He is currently majoring in Computer Science. He enjoys
     working with sports data, using tools like R to analyze statistics, create charts, and identify trends and patterns. In his free
     time, he enjoys astronomy, photography, listening to music, and watching movies.
+
+- name: Char Davis
+  role:
+  image: 
+    path: /assets/team/Char-Davis.png
+  bio: >- 
+    Char is a senior Computer Science student at Old Dominion University. He has an interest in technology and enjoys learning 
+    about different areas of computer science and software development. Through his coursework and projects, he has gained 
+    experience working both independently and as part of a team. Outside of school, Char enjoys playing video games, 
+    working out, spending time with fiancée, and trying new food.
+
+  - name: MayLing Wen Gordon
+  role:
+  image: 
+    path: /assets/team/MayLing-Gordon.jpg
+  bio: >-
+    MayLing is a junior Computer Science student at Old Dominion University. She is studying general software development and
+    exploring different areas. She currently holds a CompTIA A+ certification for IT fundamentals knowledge. Her original
+    inspiration for studying programming was ID Software's origin story, and how John Carmack and John Romero revolutionized
+    computer graphics optimization with DOOM '93. Other than programming, she also studies sketching, writing, drumming, and keyboard.
