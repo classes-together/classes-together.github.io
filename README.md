@@ -12,7 +12,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | Ty Brickers | [Email](mailto:tbric005@odu.edu) | [@tybrick47](https://github.com/tybrick47)|
 | Brycen Cuffee | [Email](mailto:bcuff007@odu.edu) | [@bisoncoffee](https://github.com/bisoncoffee) |
 | Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida)|
-| Char Davis | | |
+| Char Davis | [Email](mailto:cdavi107@odu.edu) | [@CDavi107](https://github.com/CDavi107)|
 | MayLing Gordon |[Email](mailto:mgord019@odu.edu) | [@mgord019](https://github.com/mgord019)|
 | Aaron Moeller | [Email](mailto:amoel001@odu.edu) | [@csamoeller](https://github.com/csamoeller) |
 | Zachary Perkins |[Email](mailto:zperk002@odu.edu) |[@zperk002](https://github.com/zperk002) |
