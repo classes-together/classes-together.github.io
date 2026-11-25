@@ -48,3 +48,52 @@ features:
     description: Communities are created for a specific course and semester, keeping discussions relevant.
     alt: ""
     icon: /assets/icons/calendar-range.svg
+
+overview:
+  title: Project Overview
+
+  elevator_pitch:
+    title: Elevator Pitch
+    description: >-
+      Classes Together creates a convenient space for informal academic discussion and streamline invitations. There are
+      not many easy or convenient ways for students to communicate informally with their classmates outside of class.
+      Additionally, invitations from other informal platforms are time-consuming to send and do not always stay open.
+      Classes Together automatically enrolls students in forums for their current classes, which stay open to join for
+      the full class duration.
+
+  problem:
+    title: Problem Description
+    paragraphs:
+      - text: >-
+          Learning management systems (LMS) are for formal academic discussion and discourage students from asking
+          questions due to their strict atmosphere (Lav et al., 2025).
+        citation: lav-2025
+
+      - text: >-
+          Informal instant messaging platforms provide a relaxed atmosphere, but they are not originally intended for
+          academics or come with courses built in.
+
+      - text: >-
+          LMS only allow instructors or administrators to customize courses. While instant messengers allow user
+          customization, popular options do not have built-in academic features.
+
+      - text: >-
+          Only LMS instructors or administrators may create invites. And while users on instant messengers may,
+          invititations must be manually sent out and typically expire, causing students to miss invitations.
+
+  audience:
+    title: Customer and End User
+
+    customer:
+      title: Customer
+      description: Colleges/Universities
+
+    end_user:
+      title: End-User
+      description: College/University students
+
+  solution:
+    title: Solution Statement
+    description: >-
+      Classes Together will eliminate the time lost by manually sending out invitations and reentry of course and
+      academic information into a new profile. It will also provide an informal setting that is still academic oriented.
