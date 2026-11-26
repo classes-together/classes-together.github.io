@@ -9,15 +9,15 @@ View the website: [Classes Together](https://classes-together.github.io/)
 
 | Name | Email | GitHub |
 |------|-------|--------|
-| Ty Brickers | [Email](mailto:tbric005@odu.edu) | [@tybrick47](https://github.com/tybrick47)|
+| Ty Brickers | [Email](mailto:tbric005@odu.edu) | [@tybrick47](https://github.com/tybrick47) |
 | Brycen Cuffee | [Email](mailto:bcuff007@odu.edu) | [@bisoncoffee](https://github.com/bisoncoffee) |
-| Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida)|
-| Char Davis | [Email](mailto:cdavi107@odu.edu) | [@CDavi107](https://github.com/CDavi107)|
-| MayLing Gordon |[Email](mailto:mgord019@odu.edu) | [@mgord019](https://github.com/mgord019)|
+| Roman David | [Email](mailto:rdavi030@odu.edu) | [@rojarida](https://github.com/rojarida) |
+| Char Davis | [Email](mailto:cdavi107@odu.edu) | [@CDavi107](https://github.com/CDavi107) |
+| MayLing Gordon | [Email](mailto:mgord019@odu.edu) | [@mgord019](https://github.com/mgord019) |
 | Aaron Moeller | [Email](mailto:amoel001@odu.edu) | [@csamoeller](https://github.com/csamoeller) |
-| Zachary Perkins |[Email](mailto:zperk002@odu.edu) |[@zperk002](https://github.com/zperk002) |
+| Zachary Perkins | [Email](mailto:zperk002@odu.edu) | [@zperk002](https://github.com/zperk002) |
 | Pratham Talati | | |
-| Ali Al Tekreeti | [Email](mailto:aalte002@odu.edu) | [@aalte002](https://github.com/aalte002)|
+| Ali Al Tekreeti | [Email](mailto:aalte002@odu.edu) | [@aalte002](https://github.com/aalte002) |
 
 
 ## Collaborative Documents
@@ -37,6 +37,7 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | `_layouts/` | Shared page layouts |
 | `_includes/` | Reusable components |
 | `_data/` | YAML files containing website data |
+| `pages/` | Dedicated directory for HTML pages |
 | `assets/css/` | Website styling |
 | `assets/js/` | JavaScript functionality |
 | `assets/team/` | Portraits of team members |
@@ -44,7 +45,6 @@ View the website: [Classes Together](https://classes-together.github.io/)
 | `assets/deliverables/` | Deliverable documents |
 | `assets/icons/` | Icons |
 | `assets/images/` | Images |
-| `*.html` | Corresponding HTML page |
 
 
 ## Making Changes
