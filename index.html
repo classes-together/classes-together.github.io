@@ -5,6 +5,7 @@ permalink: /
 
 {% assign hero = site.data.home.hero %}
 {% assign features = site.data.home.features %}
+{% assign overview = site.data.home.overview %}
 
 <section class="page home">
   <div class="home-hero">
@@ -12,16 +13,13 @@ permalink: /
     <p class="tagline">{{ hero.tagline }}</p>
     <a class="photo-credit"
        href="{{ hero.photo_credit.url | relative_url | escape }}">{{ hero.photo_credit.text | escape }}</a>
-    <a class="learn-more"
-       href="{{ hero.button.url | relative_url | escape }}">{{ hero.button.text }}</a>
+    <a class="learn-more" href="{{ hero.button.url | relative_url | escape }}">{{ hero.button.text }}</a>
   </div>
 
   <div class="features-grid">
     {% for feature in features %}
       <div class="feature">
-        <img src="{{ feature.icon | relative_url }}"
-             alt="{{ feature.alt | escape }}"
-             class="feature-icon" />
+        <img src="{{ feature.icon | relative_url }}" alt="{{ feature.alt | escape }}" class="feature-icon" />
 
         <h2>{{ feature.title | escape }}</h2>
         <p>{{ feature.description | escape }}</p>
@@ -29,95 +27,71 @@ permalink: /
     {% endfor %}
   </div>
 
-  <div style="color: black">
-      <h2
-        style="
-          color: darkblue;
-          border-bottom-style: solid;
-          border-bottom-width: 3.5px;
-          border-bottom-color: darkblue;
-          border-spacing: 10px;
-        "
-      >
-        Elevator Pitch
-      </h2>
+  <div class="project-overview">
+    <h2>{{ overview.title | escape }}</h2>
+
+    <div class="overview-card overview-pitch">
+      <h3 style="color: darkblue;
+                 border-bottom-style: solid;
+                 border-bottom-width: 3.5px;
+                 border-bottom-color: darkblue;
+                 border-spacing: 10px">{{ overview.elevator_pitch.title | escape }}</h3>
       <!--Begin quoted paragraph from Team Blue - Design Presentation at--->
       <!--https://docs.google.com/presentation/d/13PMc06cvNT-QpGnVoWdPR5bBrLS7Dn8zI0_n9iXsm_w/edit?slide=id.h39fdb7becff42b16_0_98#slide=id.h39fdb7becff42b16_0_98-->
-      <p>
-        Classes Together creates a convenient space for informal academic
-        discussion and streamline invitations. There are not many easy or
-        convenient ways for students to communicate informally with their
-        classmates outside of class. Additionally, invitations from other
-        informal platforms are time-consuming to send and do not always stay
-        open. Classes Together automatically enrolls students in forums for
-        their current classes, which stay open to join for the full class
-        duration.
-      </p>
-      <!--End quoted paragraph-->
-      <h2
-        style="
-          color: darkblue;
-          border-bottom-style: solid;
-          border-bottom-width: 3.5px;
-          border-bottom-color: darkblue;
-          border-spacing: 10px;
-        "
-      >
-        Problem Description
-      </h2>
-      <!--Begin quoted paragraph from Team Blue - Design Presentation at--->
-      <!--https://docs.google.com/presentation/d/13PMc06cvNT-QpGnVoWdPR5bBrLS7Dn8zI0_n9iXsm_w/edit?slide=id.h39fdb7becff42b16_0_0#slide=id.h39fdb7becff42b16_0_0-->
-      <p>
-        Learning management systems (LMS) are for formal academic discussion and
-        discourage students from asking questions due to their strict atmosphere
-        (Lav et al., 2025). Informal instant messaging platforms provide a
-        relaxed atmosphere, but they are not originally intended for academics
-        or come with courses built in.
-        <br /><br />
-        LMS only allow instructors or administrators to customize courses. While
-        instant messengers allow user customization, popular options do not have
-        built-in academic features.
-        <br /><br />
-        Only LMS instructors or administrators may create invites. And while
-        users on instant messengers may, invititations must be manually sent out
-        and typically expire, causing students to miss invitations.
-      </p>
-      <!--End quoted paragraph-->
-      <h2
-        style="
-          color: darkblue;
-          border-bottom-style: solid;
-          border-bottom-width: 3.5px;
-          border-bottom-color: darkblue;
-          border-spacing: 10px;
-        "
-      >
-        Customer and End User
-      </h2>
-      <p>
-        Customer: Colleges/Universities <br /><br />End-User: College/University
-        students
-      </p>
-      <h2
-        style="
-          color: darkblue;
-          border-bottom-style: solid;
-          border-bottom-width: 3.5px;
-          border-bottom-color: darkblue;
-          border-spacing: 10px;
-        "
-      >
-        Solution Statement
-      </h2>
-      <!--Begin quoted paragraph from Team Blue - Design Presentation at--->
-      <!--https://docs.google.com/presentation/d/13PMc06cvNT-QpGnVoWdPR5bBrLS7Dn8zI0_n9iXsm_w/edit?slide=id.h39fdb7becff42b16_0_15#slide=id.h39fdb7becff42b16_0_15-->
-      <p>
-        Classes Together will eliminate the time lost by manually sending out
-        invitations and reentry of course and academic information into a new
-        profile. It will also provide an informal setting that is still academic
-        oriented.
-      </p>
+      <p>{{ overview.elevator_pitch.description | escape }}</p>
       <!--End quoted paragraph-->
     </div>
+
+    <div class="overview-card">
+      <h3 style="color: darkblue;
+                 border-bottom-style: solid;
+                 border-bottom-width: 3.5px;
+                 border-bottom-color: darkblue;
+                 border-spacing: 10px">{{ overview.problem.title | escape }}</h3>
+
+      {% for paragraph in overview.problem.paragraphs %}
+        <!--Begin quoted paragraph from Team Blue - Design Presentation at--->
+        <!--https://docs.google.com/presentation/d/13PMc06cvNT-QpGnVoWdPR5bBrLS7Dn8zI0_n9iXsm_w/edit?slide=id.h39fdb7becff42b16_0_0#slide=id.h39fdb7becff42b16_0_0-->
+        <p>
+          {{ paragraph.text | escape }}
+          {% if paragraph.citation %}
+            {% include cite.html id=paragraph.citation %}
+          {% endif %}
+        </p>
+        <!--End quoted paragraph-->
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="overview-card">
+    <h3 style="color: darkblue;
+               border-bottom-style: solid;
+               border-bottom-width: 3.5px;
+               border-bottom-color: darkblue;
+               border-spacing: 10px">{{ overview.audience.title | escape }}</h3>
+
+    <div class="audience-grid">
+      <div class="audience-item">
+        <h4>{{ overview.audience.customer.title | escape }}</h4>
+        <p>{{ overview.audience.customer.description | escape }}</p>
+      </div>
+      <div class="audience-item">
+        <h4>{{ overview.audience.end_user.title | escape }}</h4>
+        <p>{{ overview.audience.end_user.description | escape }}</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="overview-card">
+    <h3 style="color: darkblue;
+               border-bottom-style: solid;
+               border-bottom-width: 3.5px;
+               border-bottom-color: darkblue;
+               border-spacing: 10px">{{ overview.solution.title | escape }}</h3>
+    <!--Begin quoted paragraph from Team Blue - Design Presentation at--->
+    <!--https://docs.google.com/presentation/d/13PMc06cvNT-QpGnVoWdPR5bBrLS7Dn8zI0_n9iXsm_w/edit?slide=id.h39fdb7becff42b16_0_15#slide=id.h39fdb7becff42b16_0_15-->
+    <p>{{ overview.solution.description | escape }}</p>
+    <!--End quoted paragraph-->
+  </div>
 
 </section>
