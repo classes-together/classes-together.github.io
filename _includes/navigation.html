@@ -30,6 +30,8 @@
         </div>
       </div>
 
+    <a href="{{ '/glossary' | relative_url }}" {% if page.url == '/glossary/' %} aria-current="page" {% endif %}>Glossary</a>
     <a href="{{ '/references' | relative_url }}" {% if page.url == '/references/' %} aria-current="page" {% endif %}>References</a>
+
   </div>
 </nav>
