@@ -1,0 +1,20 @@
+---
+title: Glossary
+permalink: /glossary/
+header_key: glossary
+---
+
+{% assign glossary = site.data.glossary %}
+
+<section class="page glossary">
+  {% include page-header.html key=page.header_key %}
+
+  <dl class="glossary-list">
+    {% assign terms = glossary.terms | sort: "term" %}
+
+    {% for item in terms %}
+      <dt>{{ item.term | escape }}</dt>
+      <dd>{{ item.definition | escape }}</dd>
+    {% endfor %}
+  </dl>
+</section>
