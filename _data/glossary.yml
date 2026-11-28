@@ -1,8 +1,45 @@
 terms:
-  - term: Random
+  - term: Canvas
     definition: >-
-      made, done, or chosen at random
+      A learning management system used by educational institutions to organize course materials, assignments, grades, announcements, and academic discussions.
 
-  - term: Lorem Ipsum
+
+  - term: Classes Together
     definition: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, uspendisse mattis neque nec facilisis tincidunt.
+      A web-based platform that provides students with course-specific communities for informal academic discussions and collaboration.
+
+  - term: Course Group
+    definition: >-
+      A forum for academic correspondence, designated to one class or course only.
+      
+  - term: Email
+    definition: >-
+      An electronic mailing system that is used to send emails to recipients via applications, such as Outlook and Gmail.
+
+      
+  - term: Enrollment Data
+    definition: >-
+      Information identifying the courses in which a student is registered during an academic term.
+
+      
+  - term: Learning Management System (LMS)
+    definition: >-
+      An application that is used by K-12 schools and universities to help provide students with access to the list of enrolled courses and a calendar that will help them to remember the upcoming due dates for a course enrolled for the semester.
+      
+  - term: Mock Enrollment Data
+    definition: >-
+      Simulated student registration information used to demonstrate how Classes Together would display course communities without accessing actual university enrollment records.
+
+      
+  - term: Prototype
+    definition: >-
+      An early working version of a software product used to demonstrate and evaluate its proposed features and functionality.
+      
+  - term: University Credentials
+    definition: >-
+      Login information provided by an educational institution that allows students to authenticate their identity when accessing university services.
+
+      
+  - term: Web-Based Platform
+    definition: >-
+      A software application accessed through a web browser rather than requiring users to install a dedicated application.
