@@ -9,12 +9,21 @@ header_key: glossary
 <section class="page glossary">
   {% include page-header.html key=page.header_key %}
 
-  <dl class="glossary-list">
-    {% assign terms = glossary.terms | sort: "term" %}
+  <div class="glossary-container">
+    <div class="glossary-header">
+      <span>Phrase/Term</span>
+      <span>Definition</span>
+    </div>
 
-    {% for item in terms %}
-      <dt>{{ item.term | escape }}</dt>
-      <dd>{{ item.definition | escape }}</dd>
-    {% endfor %}
-  </dl>
+    <dl class="glossary-list">
+      {% assign terms = glossary.terms | sort: "term" %}
+
+      {% for item in terms %}
+        <div class="glossary-item">
+          <dt>{{ item.term | escape }}</dt>
+          <dd>{{ item.definition | escape }}</dd>
+        </div>
+      {% endfor %}
+    </dl>
+  </div>
 </section>

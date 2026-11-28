@@ -50,7 +50,7 @@ main {
 }
 
 .page > h1 {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
   text-align: center;
   font-size: 3rem;
   color: var(--blue-dark);
@@ -201,7 +201,9 @@ footer .copyright {
     ),
     var(--perry-library);
 
-  background-size: cover, max(100%, 105rem) auto;
+  background-size:
+    cover,
+    max(100%, 105rem) auto;
   background-position: center;
   background-repeat: no-repeat;
 
@@ -318,7 +320,6 @@ footer .copyright {
   background-color: var(--blue-primary);
 }
 
-
 .feature:nth-child(9n + 3),
 .feature:nth-child(9n + 5),
 .feature:nth-child(9n + 7) {
@@ -400,8 +401,7 @@ footer .copyright {
 
   object-position: var(--image-position, center);
 
-  transform: translate(var(--image-x, 0%), var(--image-y, 0%))
-              scale(var(--image-zoom, 1));
+  transform: translate(var(--image-x, 0%), var(--image-y, 0%)) scale(var(--image-zoom, 1));
 }
 
 .team-member-info {
@@ -429,22 +429,7 @@ footer .copyright {
   line-height: 1.5;
 }
 
-/*
- * SHARED STYLING
- */
-.about h1,
-.team h1,
-.presentations h1,
-.deliverables h1,
-.references h1 {
-  margin-bottom: 1rem;
-}
-
-.about .description,
-.team .description,
-.presentations .description,
-.deliverables .description,
-.references .description {
+.page > .description {
   text-align: center;
   font-size: 1.2rem;
   font-weight: 600;
@@ -462,7 +447,7 @@ footer .copyright {
 
 .about > h2,
 .references > h2,
-.document-group > h2{
+.document-group > h2 {
   margin-top: 5rem;
 
   font-size: 2rem;
@@ -530,6 +515,61 @@ nav a:focus-visible,
   outline-offset: 3px;
 }
 
+
+/*
+ * GLOSSARY
+ */
+.glossary-container {
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+
+  background-color: white;
+  border: 1px solid var(--blue-pale);
+  border-radius: 0.75rem;
+}
+
+.glossary-list {
+  margin: 0;
+  padding: 0;
+}
+
+.glossary-header,
+.glossary-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 3fr);
+  gap: 2rem;
+}
+
+.glossary-header {
+  padding: 1rem 0;
+  font-size: 1.3rem;
+  font-weight: 600;
+
+  color: var(--blue-primary);
+  border-bottom: 3px solid var(--blue-light);
+}
+
+.glossary-item {
+  padding: 1.25rem 0;
+  font-size: 1.2rem;
+  line-height: 1.5;
+
+  border-bottom: 1px solid var(--blue-pale);
+}
+
+.glossary-item:last-child {
+  border-bottom: none;
+}
+
+.glossary-item dt {
+  font-weight: 600;
+  color: var(--blue-medium);
+}
+
+.glossary-item dd {
+  margin: 0;
+}
+
 /*
  * REFERENCES
  */
@@ -563,7 +603,8 @@ nav a:focus-visible,
 }
 
 @keyframes highlight-fade {
-  0%, 70% {
+  0%,
+  70% {
     background-color: var(--blue-pale);
   }
 
@@ -699,4 +740,23 @@ nav a:focus-visible,
     width: 100%;
   }
 
+  .glossary-container {
+    padding: 1rem 1.5rem;
+  }
+
+  .glossary-header {
+    display: none;
+  }
+
+  .glossary-item {
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem 0;
+
+    font-size: 1rem;
+  }
+
+  .glossary-item dt {
+    font-size: 1.3rem;
+  }
 }
