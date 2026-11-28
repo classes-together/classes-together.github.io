@@ -32,6 +32,12 @@ presentations:
     documents:
       - label: Iteration 1
         file: /assets/presentations/societal-problem.pdf
+  
+  - id: Design
+    title: Design Presentation
+    documents:
+      - label: Iteration 1
+        file: /assets/presentations/design-presentation.pdf
 
 deliverables:
   - id: lab-outline
